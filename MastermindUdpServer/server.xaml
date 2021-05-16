@@ -1,0 +1,31 @@
+﻿<Window x:Class="MastermindUdpServer.server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MastermindUdpServer"
+        mc:Ignorable="d"
+        Title="Mastermind - Server" Height="500" Width="800" ResizeMode="NoResize" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="mastermind.jpg"/>
+        </Grid.Background>
+        <Label Foreground="White" Content="Destination ip address" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black"/>
+
+        <TextBox Foreground="White" BorderThickness="2" BorderBrush="White" x:Name="txtIpAdd" HorizontalAlignment="Left" Height="29" Margin="15,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199"/>
+        <TextBox Foreground="White" BorderThickness="2" BorderBrush="White" x:Name="txtDestPort" HorizontalAlignment="Left" Height="29" Margin="290,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="211"/>
+        <Label FontFamily="Source Serif Pro Black" Foreground="White" Content="Destination port" HorizontalAlignment="Left" Margin="290,10,0,0" VerticalAlignment="Top"/>
+        <Label Foreground="White" Content="Created by Pulga Luca 4^L. All rights reserved by Pulga Luca ©." HorizontalAlignment="Left" Margin="218,442,0,0" VerticalAlignment="Top" Height="24"/>
+        <Button x:Name="btnRules" Content="Rules" HorizontalAlignment="Left" Margin="719,8,0,0" VerticalAlignment="Top" Width="67" Background="#FF00FFBF" Click="btnRules_Click" Height="26"/>
+        <Label Foreground="White" Content="Number to send: 5 cifre" HorizontalAlignment="Left" Margin="291,74,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" RenderTransformOrigin="0.689,0.597" Width="198"/>
+        <TextBox Foreground="White" BorderThickness="2" BorderBrush="White" x:Name="txtNumberToSend" HorizontalAlignment="Left" Height="29" Margin="294,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="199"/>
+        <Label x:Name="lblTentativi" Foreground="White" Content="TENTATIVI:&#xD;&#xA;" HorizontalAlignment="Left" Margin="15,134,0,0" VerticalAlignment="Top" Height="29" Width="199"/>
+        <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Margin="501,101,0,0" VerticalAlignment="Top" Width="65" Background="#FF00FFBF" Click="btnSend_Click" Height="29"/>
+        <Label x:Name="lblReceivedData"  Foreground="White" Content="RECEIVED RESULTS:&#xD;&#xA;" HorizontalAlignment="Left" Margin="571,39,0,0" VerticalAlignment="Top" Height="28" Width="209"/>
+        <TextBox x:Name="txtNumeroDaIndovinare" Foreground="White" BorderThickness="2" BorderBrush="White" HorizontalAlignment="Left" Height="27" Margin="18,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="179"/>
+        <Button x:Name="btnScelto" Content="Scelto" HorizontalAlignment="Left" Margin="201,105,0,0" VerticalAlignment="Top" Width="64" Height="21" FontSize="11" Click="btnScelto_Click"/>
+        <Label Foreground="White" Content="Numero da indovinare: 5 cifre" HorizontalAlignment="Left" Margin="16,76,0,0" VerticalAlignment="Top" FontFamily="Source Serif Pro Black" Width="178"/>
+        <Label x:Name="lblTrasmissione" Foreground="White" BorderBrush="White" BorderThickness="2" Content="" HorizontalAlignment="Left" Margin="14,160,0,0" VerticalAlignment="Top" Height="304" Width="187"/>
+        <Label x:Name="lblRicezione" Foreground="White" BorderBrush="White" BorderThickness="2" Content="" HorizontalAlignment="Left" Margin="581,70,0,0" VerticalAlignment="Top" Height="391" Width="199"/>
+    </Grid>
+</Window>
